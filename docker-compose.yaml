@@ -1,0 +1,10 @@
+services:
+  pdf2zh:
+    image: byaidu/pdf2zh
+    ports:
+      - "0.0.0.0:7860:7860"
+  ollama:
+    image: ollama/ollama
+    ports:
+      - "0.0.0.0:11434:11434"
+    runtime: nvidia
