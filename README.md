@@ -8,9 +8,18 @@
     ```
     を実行する．
 2. ```
+    docker exec -it <ollama_container_id> bash
+    ```
+    を実行して，ollamaに適切にモデルをpullする．
+    今回はgemma2をpullする．
+    ```
+    ollama pull gemma2
+    ```
+2. ブラウザで
+    ```
     localhost:7860
     ```
-    にアクセスする．
+    アクセスする．
 3.  翻訳したいpdfファイルをアップロードする．
 
     option欄を以下のように設定
@@ -29,3 +38,4 @@ https://hub.docker.com/r/byaidu/pdf2zh
 
 https://hub.docker.com/r/ollama/ollama
 
+https://ollama.com/library/gemma2
