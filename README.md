@@ -11,23 +11,32 @@
     docker exec -it <ollama_container_id> bash
     ```
     を実行して，ollamaに適切にモデルをpullする．
-    今回はgemma2をpullする．
+    今回はgemma3:4bをpullする．
     ```
-    ollama pull gemma2
+    ollama pull gemma3:4b
     ```
-2. ブラウザで
+3. python環境内で
+    ``` bash
+    pip install pdf2zh
+
+    pdf2zh -i
+    ```
+    を実行する。
+
+4. ブラウザで
     ```
     localhost:7860
     ```
     アクセスする．
-3.  翻訳したいpdfファイルをアップロードする．
+
+5.  翻訳したいpdfファイルをアップロードする．
 
     option欄を以下のように設定
     ![option欄](./img.png)
 
-4. Translate from と Translate to を任意に設定する．
+6. Translate from と Translate to を任意に設定する．
 
-5. Translated から翻訳語のpdfがダウンロードできる．
+7. Translated から翻訳語のpdfがダウンロードできる．
 
 ## 参考
 https://github.com/Byaidu/PDFMathTranslate
