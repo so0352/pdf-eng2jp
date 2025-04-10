@@ -15,7 +15,7 @@
     ```
     ollama pull gemma3:4b
     ```
-3. python環境内で
+3. python環境内(Docker環境とは別、ローカル環境でvenvとかで構築を推奨)で
     ``` bash
     pip install pdf2zh
 
